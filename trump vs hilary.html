@@ -1,0 +1,140 @@
+<html>
+<head>
+<title>Trump vs Hillary</title>
+<link rel='stylesheet' href='trmphlry.css'>
+</head>
+<body>
+<div class = 'head'>
+<h1><center>A closer look at the 2016 elections - Trump Vs Hillary</center> </h1>
+
+</div>
+<div class = 'trmphlry'>
+</div>
+<h1>Introduction </h1>
+<p class="para1">
+<br>
+<i>
+My purpose for these visualizations was to shed light on the factors that lead to the Trump government being elected in 2016. 
+I was very curious to see what it was that swayed voters who had previously voted for Barack Obama in 2012 to shift over to Donald Trump
+four years later. Another aspect of my question was what lead to Hillarys deafeat? I wanted to understand what demographic Hillary had targeted and 
+failed to garner votes from. 
+To get to the bottom of these questions I began analyzing the 
+<a href="https://www.kaggle.com/joelwilson/2012-2016-presidential-elections#votes.csv">Presedential Elections Dataset from Kaggle.</a>
+</i>
+</p>
+
+<h2>How did Trump win against Hillary?</h2>
+<p class ='para1'>
+<i>
+I wanted to get a bare bone understanding of what areas each of the candidates dominated and by what margin, I wanted to glean if there was
+any sort of location advantage or favouritism that each of the candidates experienced. This lead me to go for a chloropleth visualization with
+a nested pie chart. I took an average of the votes gained by each of the candidates in each county and calculated the overall votes for each state
+and compared them using a pie chart, to calculate the colors I used sum of the point difference field for each state and colored it red(Republicans) for negative values 
+and blue(Democrats) for positive values.
+</i>
+</p>
+<center>
+<img src='Chloropleth.png' style="width:500px;height:300px;" >
+</center>
+
+
+<p class="para1">
+<i>
+From the visualization it was clear that Trump had dominated most of the southern and midwestern states while Hillary had won the states in 
+the far east and the far west, but what I found fascinating in this visualization is that most of the states that Hillary won were home to the
+largest metro cities of America, and what I found particularly interesting was the majority with which she had won Washington DC which is 88.7%.
+This outlier lead me to take a closer look at what it was that made Hillary so successful in these select few locations and compare them with the states 
+which trump won.
+</i>
+<p>
+
+<h2>What is the difference between the states won by Trump and the states won by Hillary?</h2>
+
+<p class="para1">
+<i>
+To better understand the kind of people that favoured Trump over Hillary I wanted to group the states by their financial standing. I wanted to 
+see if any pattern would emerge which would lead me to gain some insight over the voter base for Trump and Hillary. I chose a scatterplot visualization
+in hopes of observing a spatial difference between the two groups of voters, I used the paramters of poverty percentage and Average income of the voters
+because I wanted to understand if wage gap was playing a factor in determining the Candidate in a particular state. To achieve this visualization I took 
+an average of the poverty percentage across all counties and similarly took an average for the income for each county based on the state. Coloring was again 
+done on the basis of the sum of point differnce across each state. 
+</i>
+</p>
+
+<center>
+<img src='Scatterplot.png' style="width:500px;height:300px;" >
+</center>
+
+<p class="para1">
+<i>
+It is clear from the visualization that the states won by Trump and Hillary can be segregated into two distinct financial groups. Most of the states that 
+had 20 percent or more of their population below poverty line and very low average incomes were won by Trump, where as 
+the states won by Hillary were generally high average income and low poverty percentage. It is also interesting to note that the outlier in this chart
+as well is Washington DC, which is in the middle and to the far right implying moderate poverty percentage and very high average income.
+Seeing as how Hillary dominated Washington DC with 88 percentage of the votes it is fair to assume that the average income of the state is a huge 
+factor for Hillarys voter base. 
+</i>
+</p>
+
+<h2>How diverse are the voters for Trump and Hillary?</h2>
+
+<p class='para1'>
+<i>I wanted to gain a more in depth understanding of the voter base for Trump and Hillary, so I calculated the average number of Black, Hispanic and
+White voters across the states. I displayed this data in a divided bar graph because I wanted to see how significant minorities were in the voting process.
+Especially since Trump has always taken a staunch anti-immigration stance towards Mexico, I wanted to see if there was any impact or backlash from 
+the Mexican community.
+</i>
+</p>
+
+<center>
+<img src='Divided Bar.png' style="width:500px;height:300px;">
+</center>
+
+<p class='para1'>
+<i>It can be seen that the majority of the voters for Trump were White, dominating the chart with 88% of all his voters, but what is a little shocking
+is that 7% of his votes come from the Hispanic community which is slightly bigger than the votes he garnered from the Black community.
+When it came to Hillary's voter base it was a little more diverse than Trumps, implying that Hillary had the overall minority support. So we can narrow down 
+Trumps voter base to be mainly White citizens with below average income and a large percentage of them below the poverty line, implying that these individulas
+voted for Trump out of the frustration of their economic status in hopes of him bringing economic stability back to America. Since Obama was the  
+president during the time of recession this might have lead to a lot of people becoming dissatisfied with the economic status of the country and the dearth 
+of jobs leading them to jump ship.
+</i>
+</p>
+
+<h2>What states shifted from supporting Obama to Trump?</h2>
+
+<p class='para1'>
+<i>
+The previous visualizations lead me to belive that Trump gained the upper hand by promising to make America more economically stable and targetting 
+working class Americans that wanted more jobs. What I wanted to now quantify was if there was a palpable shift of votes from previously Democrat dominated states.
+To achieve this I went about visualizing the number of states that Obama and Trump had in common using a Venn Diagram, I have made a separate legend using 
+horizontal bars to better quantify this data. Since there was no traditional way to make a Venn diagram in Tableau, I made three different sets (Obama), (Trump) 
+and (Obama & Trump) and using calculation fields I made the parameters for the visualizations.
+
+</i>
+</p>
+<center>
+<img src='Venn Diagram 2.png' style="width:350px;height:200px;" >
+
+</center>
+
+<center>
+<img src='Legend.png' style="width:350px;height:75px;" >
+</center>
+<p class='para1'>
+<i>
+From the visualization we can see that 6 states (Florida, Iowa, Michigan, Ohio, Pennsylvania, Wisconsin) have shifted over to Trump in 2016 from 
+Obama in 2012. I belive that it was these 6 states that really made the difference and tipped the scales towards Trump.
+</i>
+</p>
+<h1>Conclusion</h1>
+<p class ="para1">
+<i>
+I belive that Trump could succeed in winning the election by targetting the voters who wanted a drastic change in the economy 
+while Hillary failed because her major voting base was from minorities which in the end did not amount to much, 
+thus leading to the 6 democrat dominated states jumping ship to the Trump government. I believe that a fraction of the democrat voter base was dissatisfied
+with the Obama government because of the recession and dearth of jobs which lead them to pick Trump in hopes of him bringing up the economy and creating new jobs.
+</i>
+</p>
+</body>
+</html>

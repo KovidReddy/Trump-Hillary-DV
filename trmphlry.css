@@ -1,0 +1,42 @@
+.head
+{
+	background-color : #2a2160;
+	height : 3rem;
+}
+.trmphlry
+{ 
+	background-image : url('th2.jpg');
+	height : 8rem;	
+}
+
+body
+{
+	background-color : black;
+	color : white;
+}
+
+a:link
+{
+	color: red;
+}
+
+a:visited
+{
+	color: pink;	
+}
+
+p.para1
+{
+	padding-left: 35px;		
+	padding-right: 35px;
+	padding-bottom: 10px;
+}
+
+h2
+{
+	padding-left: 35px;
+}
+h1
+{
+	padding-left: 35px;
+}
